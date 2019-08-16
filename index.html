@@ -6,40 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
+    <title>Relax Parking</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB_P85okqgpK5ptLlJmj1QFrXksEhVc6ag",
+    authDomain: "fir-day-ffb26.firebaseapp.com",
+    databaseURL: "https://fir-day-ffb26.firebaseio.com",
+    projectId: "fir-day-ffb26",
+    storageBucket: "",
+    messagingSenderId: "157326814043",
+    appId: "1:157326814043:web:39be73c1e3a45fd5"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 </head>
 <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+
 <body>
-        <header class="clearfix">
-                <div class="container">
-                        <div class="header-left">
-                            <h1>Relax Parking</h1>
-                        </div>
-                        <div class="header-right">
-                            <label for="open">
-                                <span class="hidden-desktop"></span>
-                            </label>
-                            <input type="checkbox" name="" id="open">
-                            <nav>
-                                <a href="#">Home</a>
-                                <a href="#">Works</a>
-                                <a href="#">Contact</a>
-                                
-                            </nav>
-                        </div>
-                    </div>
-                </header>
-    <div class="parallax"></div>
-        <input type="text" placeholder="Search..">
-    <div style="height:1000px;font-size: 24px;">
+    <header class="clearfix">
+        <div class="container">
+            <div class="header-left">
+                <a href="index.html" class="homey">Relax Parking</a>
+            </div>
+            <div class="header-right">
+                <label for="open">
+                    <span class="hidden-desktop"></span>
+                </label>
+                <input type="checkbox" name="" id="open">
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="map.html">Map</a>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="parallax">
+        <div id="bar"><input type="text" placeholder="Search.." id="search">
+            <button type="button" id="searchButton">Click Me!</button>
+        </div>
     </div>
-
-<div class="parallax">
-    <p>This website is supposed to help people find parking. There are different colors to help signify whether the parking spot is available or not.</p>
-</div>
-
-
-
+    <div>
+        <p>This website is designed to help people find parking. There are different colors to help signify whether
+            the parking spot is available or not. The app is free of charge and we are hopeful that it can help people with their parking experience.
+        </p>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,8 @@
+.display{
+    display: block;
+    border: solid 1px black;
+}
+
+.show{
+    color: red;
+}

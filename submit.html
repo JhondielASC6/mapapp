@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="parking.css">
+    <title>Do</title>
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyB_P85okqgpK5ptLlJmj1QFrXksEhVc6ag",
+          authDomain: "fir-day-ffb26.firebaseapp.com",
+          databaseURL: "https://fir-day-ffb26.firebaseio.com",
+          projectId: "fir-day-ffb26",
+          storageBucket: "",
+          messagingSenderId: "157326814043",
+          appId: "1:157326814043:web:39be73c1e3a45fd5"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      
+            </script>
+        <script src = "main.js" defer></script>
+        
+</head>
+<body>
+        <table class="responstable">
+            
+            </table>
+    <h1>Parking Spots</h1>
+    <div class="allSpots">
+    
+    </div>
+
+    <div class="display"></div>
+    <div class="userContainer">
+        <form>
+            <div class="inputContainer">
+                <div class="singleInput">
+                <label for="available">Street Name:</label>
+                <input id="available" type="text">
+            </div>
+            <div class="singleInput">
+                <label for="unavailable">City:</label>
+                <input id="unavailable" type="text">
+            </div>
+         </div>
+            <button id="submitButton">Enter</button>
+        </form>
+    </div>  
+
+
+
+
+</body>
+</html>
